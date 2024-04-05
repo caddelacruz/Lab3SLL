@@ -8,11 +8,18 @@ namespace Assignment3
 {
     public class User : IEquatable<User>
     {
+        [DataMember]
         public int Id { get; private set; }
+
+        [DataMember]
         public string Name { get; private set; }
+
+        [DataMember]
         public string Email { get; private set; }
 
+        [DataMember]
         public string Password { get; private set; }
+
 
         /// <summary>
         /// Initializes a User object.
